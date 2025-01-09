@@ -1,0 +1,187 @@
+.home {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-around;
+    color: #a57a4f;
+    font-family: 'agency-fb', arial;
+    text-align: left;
+    font-size: 180%;
+    align-items: center;
+    height: 25rem;
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+.dogs-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    /*
+    padding-left: 30px;
+
+    padding-right: 30px;
+    flex-wrap: wrap
+    */
+  }
+
+  .dogs-cards {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap
+  }
+  
+  .card-container {
+    margin: 20px;
+  }
+
+#explora-razas {
+    font-family: 'agency-fb', arial;
+    color: #808080;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 50%;
+}
+
+/*-------------------------filtro button------------------------------*/
+
+.buttons-reset-filter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#filtro-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-right: 9rem;*/
+}
+
+
+  
+#filtro-button {
+    padding: 0.5rem;
+    margin: 0px;
+    font-family: 'agency-fb', arial;
+    font-size: 2rem;
+    background-color: white;
+    border: white 0px;
+    color: #a57a4f;
+}
+
+
+#filtro-button:hover {
+    cursor: pointer;
+    color:  #b69675;
+}
+
+#reset-button {
+    padding: 0.5rem;
+    margin: 0px;
+    font-family: 'agency-fb', arial;
+    font-size: 1.5rem;
+    background-color: white;
+    border: white 0px;
+    color: #a57a4f;
+}
+
+#reset-button:hover {
+    cursor: pointer;
+    color:  #b69675;
+}
+
+.list-dropdown {
+    background-color: red;
+}
+
+.inner-list-dropdown {
+    display: flex;
+    flex-direction: row;
+}
+.inner-list-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 30%; */
+    background-color: white;
+    border-color: white;
+}
+.inner-list-dropdown select {
+    background-color: #fff4e9;
+    border-color: white;
+    color: #555555;
+}
+
+.inner-list-dropdown select:hover {
+    background-color: #ffe3c8;
+}
+
+@media only screen and (max-width: 768px) {
+    .landing {
+        flex-direction: column;
+        margin: 60px 0;
+        text-align: center;
+    }
+
+    .dog-landing img {
+        margin-top: 3rem;
+        width: 60%;
+    }
+
+    .dogs-container {
+        padding: 10px;
+    }
+
+    .card-container {
+        margin: 10px;
+    }
+
+    #filtro-button-container {
+        margin-right: 1rem;
+    }
+
+    #filtro-button {
+        font-size: 1.2rem;
+    }
+
+    #reset-button {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .landing {
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    #explora-razas {
+        font-size: 24px;
+    }
+
+    #filtro-button-container {
+        margin-right: 0.5rem;
+    }
+
+}

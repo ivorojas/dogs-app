@@ -1,0 +1,33 @@
+#paginado {
+    display: flex;
+    list-style:none;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+  }
+  
+  #paginado:hover {
+    cursor: pointer;
+  }
+  
+  .button-li {
+    padding: 0.8rem;
+    background-color: white;
+    border: 0px solid;
+    
+    color: gray;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .button-li:hover {
+   cursor: pointer;
+   background-color: rgb(201, 179, 155);
+  }
+  
+  #paginado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }

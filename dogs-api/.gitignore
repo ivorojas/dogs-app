@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Directorios de logs
+logs
+*.log
+
+# Archivos de entorno
+.env
+
+# Cache de directorios
+.cache/
+
+# Archivos de salida
+dist/
+build/
