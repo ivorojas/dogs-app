@@ -4,6 +4,8 @@ const axios = require("axios");
 const { Dog, Temperament } = require("../db.js"); // PRBOAR DB SIN JS
 
 
+//CONSOLE LOGS EN 404 ERROR PUESTOS
+
 const getApiDogs = async () => {
     try {
       const apiDogs = await axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${API_KEY}`);
@@ -125,7 +127,7 @@ const getDogsToRouter = async (req, res) => {
 
     res.status(200).json(dogs);
   } catch (error) {
-    // console.log("error en getdogstorouter");
+     console.log("error en getdogstorouter");
     res.status(404).json({ error: error.message });
   }
 };
@@ -148,7 +150,7 @@ const getDogToRouter = async (req, res) => {
       throw new Error("Dog Not Found");
     }
   } catch (error) {
-    //console.log("error en getdogtorouter");
+    console.log("error en getdogtorouter");
     res.status(404).json({ error: error.message });
   }
 };
@@ -213,7 +215,7 @@ const createDogToRouter = async (req, res) => {
     }
     res.status(200).send("Dog created succesfully");
   } catch (error) {
-    
+    console.log('error en createdog to router')
     res.status(404).json({ error: error.message });
   }
 };
