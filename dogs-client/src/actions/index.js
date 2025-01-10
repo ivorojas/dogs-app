@@ -3,7 +3,8 @@ import axios from "axios";
 export const getDogs = () => {
   return async function (dispatch) {
     try {
-      let json = await axios.get("http://localhost:3001/dogs");
+      let json = await axios.get("https://dogs-app-api.onrender.com/dogs");
+      /*    let json = await axios.get("http://localhost:3001/dogs");*/
       return dispatch({
         type: "GET_DOGS",
         payload: json.data,
@@ -17,7 +18,8 @@ export const getDogs = () => {
 export const getTemperaments = () => {
   return async function (dispatch) {
     try {
-      let json = await axios.get("http://localhost:3001/temperaments");
+      let json = await axios.get("https://dogs-app-api.onrender.com/temperaments");
+      /*      let json = await axios.get("http://localhost:3001/temperaments");*/
       //console.log(json.data);
       return dispatch({
         type: "GET_TEMPERAMENTS",
@@ -35,7 +37,8 @@ export const getDogByName = (name) => {
     try {
       console.log('get dog by name se ejecutó')
       console.log(name)
-      let json = await axios.get(`http://localhost:3001/dogs?name=` + name);
+      let json = await axios.get(`https://dogs-app-api.onrender.com/dogs?name=` + name);
+      /*      let json = await axios.get(`http://localhost:3001/dogs?name=` + name);*/
       console.log(json)
       return dispatch({
         type: "GET_NAME_DOG",
@@ -69,7 +72,8 @@ export const getDogByName = (name) => {
 export const postDog = (payload) => {
   return async function (dispatch) {
     try {
-      let response = await axios.post("http://localhost:3001/dogs", payload);
+      let response = await axios.post("https://dogs-app-api.onrender.com/dogs", payload);
+      /*   let response = await axios.post("http://localhost:3001/dogs", payload);*/
       return response;
     } catch (error) {
       console.log("error en el psotDog");
@@ -117,7 +121,8 @@ export function orderByWeight(payload) {
 export const getDetail = (id) => {
   return async function (dispatch) {
     try {
-      let json = await axios.get("http://localhost:3001/dogs/" + id);
+      let json = await axios.get("https://dogs-app-api.onrender.com/dogs/" + id);
+      /*     let json = await axios.get("http://localhost:3001/dogs/" + id);*/
       return dispatch({
         type: "GET_DETAILS",
         payload: json.data,
