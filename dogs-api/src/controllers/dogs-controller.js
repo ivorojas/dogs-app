@@ -122,10 +122,10 @@ const getDogsToRouter = async (req, res) => {
         dog.name.toLowerCase().includes(name.toLowerCase())
       );
     }
-    //console.log(dogs);
+    console.log(dogs);
     if (dogs.length === 0) throw new Error("Not found.");
-
     res.status(200).json(dogs);
+
   } catch (error) {
      console.log("error en getdogstorouter");
     res.status(404).json({ error: error.message });

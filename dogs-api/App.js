@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.use('/', routes);
 
+//console.log('holaa')
 /*
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
